@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SQLModule : ModuleScript
 {
-    /// <summary>
+    public Color highlightColor;
+    public Color baseColor;
+    public KMSelectable[] texts;/// <summary>
     /// Data set source used by the module
     /// </summary>
     DataSet source;
@@ -208,7 +210,9 @@ public class SQLModule : ModuleScript
         whereCombinationOperatorButton.OnInteract += delegate () { OnPress(UIButtonEnum.WhereOp); return false; };
         limitTakeButton.OnInteract += delegate () { OnPress(UIButtonEnum.LimitTake); return false; };
         limitSkipButton.OnInteract += delegate () { OnPress(UIButtonEnum.LimitSkip); return false; };
-
+        texts.Assign(
+    onHighlight: s => s.GetComponent<TextMesh>().color = highlightColor,
+    onHighlightEnded: s => s.GetComponent<TextMesh>().color = baseColor);
         // Mode button
         modeButton.OnInteract += OnModeChange;
 

@@ -4309,6 +4309,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0181bbe9a53434b8fd4fc23ca89fa0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  highlightColor: {r: 0.44852942, g: 1, b: 0.6128893, a: 1}
+  baseColor: {r: 0, g: 1, b: 0.29803923, a: 1}
+  texts:
+  - {fileID: 114646294499671038}
+  - {fileID: 114357917662572506}
+  - {fileID: 114259841352131254}
+  - {fileID: 114830486099178532}
+  - {fileID: 114335391175043788}
+  - {fileID: 114586130007128312}
+  - {fileID: 114275751038626598}
+  - {fileID: 114973562853262458}
+  - {fileID: 114786454955431230}
+  - {fileID: 114385310121437912}
+  - {fileID: 114559090734777402}
+  - {fileID: 114216449770617414}
   modeButton: {fileID: 114751872558224870}
   checkButton: {fileID: 114360303943966360}
   selectionLabel: {fileID: 102925089105327554}
